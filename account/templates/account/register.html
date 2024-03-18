@@ -8,12 +8,12 @@
 
 
 {% block content %}
-    <h1>Create and accoung</h1>
+    <h1>Create and account</h1>
     <p>Please, sign up using the following form:</p>
     <form method="post">
         {{ user_form.as_p }}
         {% csrf_token %}
-        <p><input type="submit" value="Create my accoung"></p>
+        <p><input type="submit" value="Create my account"></p>
     </form>
 {% endblock content %}
     
