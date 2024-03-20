@@ -55,6 +55,13 @@
         {% endblock content %}
             
     </div>
+    <script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            {% block domready %}
+            {% endblock %}
+        })
+    </script>
     
 </body>
 </html>
