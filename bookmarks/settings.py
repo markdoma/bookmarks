@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 'social_django',
-    # 'django_extensions',
+    'django_extensions',
     'images.apps.ImagesConfig',
 ]
 
@@ -142,5 +142,11 @@ AUTHENTICATION_BACKENDS =[
         'account.authentication.EmailAuthBackend',
 ]
 
+# SOCIAL_AUTH_FACEBOOK_KEY = 'XXX' # Facebook App ID 
+# SOCIAL_AUTH_FACEBOOK_SECRET = '7d87a348413e50a2cf17441bf075d43c' # Facebook App Secret
+if DEBUG:
+    import mimetypes
+    mimetypes.add_type('application/javascript', '.js', True)
+    mimetypes.add_type('text/css', '.css', True)
 
 
