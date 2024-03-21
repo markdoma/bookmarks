@@ -52,13 +52,3 @@
     border:1px solid #12c064;
     opacity:1;
 }
-
-#bookmarklet .link img {
-    border:1px solid #ccc;
-    padding:2px;
-    margin:2px;
-    opacity:0.8;
-    width:90px;
-    float:left;
-    cursor: pointer;
-}
